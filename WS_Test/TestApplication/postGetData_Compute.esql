@@ -8,7 +8,7 @@ CREATE COMPUTE MODULE postGetData_Compute
 		SET Environment.Data = PASSTHRU('select * from iibsvc.configuration_parameter where id = 22');	
 		SET OutputRoot.JSON.Data.Recordes=Environment.Data;
 		
-		PROPAGATE TO TERMINAL 'out1';
+		--PROPAGATE TO TERMINAL 'out1';
 		RETURN TRUE;
 	END;
 END MODULE;

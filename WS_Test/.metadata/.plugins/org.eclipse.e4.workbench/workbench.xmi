@@ -6,6 +6,8 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_qJFPIpAdEe2sRfgUDbOZOA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_qWIMo5AdEe2sRfgUDbOZOA" label="%trimmedwindow.label.eclipseSDK" x="64" y="64" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_qWIMo5AdEe2sRfgUDbOZOA" selectedElement="_qWIMpJAdEe2sRfgUDbOZOA" horizontal="true">
@@ -163,7 +165,7 @@
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_qajZwpAdEe2sRfgUDbOZOA" elementId="com.ibm.etools.mft.navigator.resource" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Application Development" iconURI="platform:/plugin/com.ibm.etools.mft.navigator/icons/full/view16/msgflow_perspective.gif" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view ProjectsMode=&quot;AppLib&quot; project_scrollbar_horizontal=&quot;0&quot; project_scrollbar_vertical=&quot;0&quot; sectionExpansion=&quot;ONLY_PROJECTS&quot; sectionExpansionFirstWeight=&quot;100&quot; sorter=&quot;0&quot; workingSetName=&quot;&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Broker Schemas&quot;/>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Message Namespaces&quot;/>&#xD;&#xA;&lt;filter element=&quot;Groups (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot;/>&#xD;&#xA;&lt;filter element=&quot;Elements And Attributes (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Messages (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Types (Schema Files)&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;elementMap name=&quot;[TestApplication]&quot;>&#xD;&#xA;&lt;item factoryID=&quot;org.eclipse.ui.internal.model.ResourceFactory&quot; path=&quot;/TestApplication&quot; type=&quot;4&quot;/>&#xD;&#xA;&lt;/elementMap>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view ProjectsMode=&quot;AppLib&quot; project_scrollbar_horizontal=&quot;0&quot; project_scrollbar_vertical=&quot;0&quot; sectionExpansion=&quot;ONLY_PROJECTS&quot; sectionExpansionFirstWeight=&quot;100&quot; sorter=&quot;0&quot; workingSetName=&quot;&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Broker Schemas&quot;/>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Message Namespaces&quot;/>&#xD;&#xA;&lt;filter element=&quot;Groups (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot;/>&#xD;&#xA;&lt;filter element=&quot;Elements And Attributes (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Messages (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Types (Schema Files)&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;0*/BARfiles/TestApp.bar&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;TestApplication&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources|Subflows&quot;/>&#xD;&#xA;&lt;element path=&quot;PolicyProject&quot;/>&#xD;&#xA;&lt;element path=&quot;PolicyProject|Policy&quot;/>&#xD;&#xA;&lt;element path=&quot;BARs&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;elementMap name=&quot;[TestApplication]&quot;>&#xD;&#xA;&lt;item factoryID=&quot;org.eclipse.ui.internal.model.ResourceFactory&quot; path=&quot;/TestApplication&quot; type=&quot;4&quot;/>&#xD;&#xA;&lt;/elementMap>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Integration Development</tags>
       <tags>active</tags>
@@ -217,7 +219,7 @@
       <toolbar xmi:id="_qiHaMZAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.views.PropertySheet"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_qajZyZAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Infos (4 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;120&quot; org.eclipse.ui.ide.markerType=&quot;120&quot; org.eclipse.ui.ide.pathField=&quot;160&quot; org.eclipse.ui.ide.resourceField=&quot;120&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;400&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;120&quot; org.eclipse.ui.ide.markerType=&quot;120&quot; org.eclipse.ui.ide.pathField=&quot;160&quot; org.eclipse.ui.ide.resourceField=&quot;120&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;400&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_rdKGIJAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.views.ProblemView">
@@ -249,7 +251,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC0pAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qYwC5JAdEe2sRfgUDbOZOA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_qJmMp5AdEe2sRfgUDbOZOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mxOaIJArEe2ynf83YK38HQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_qJmMp5AdEe2sRfgUDbOZOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC05AdEe2sRfgUDbOZOA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -273,7 +275,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC15AdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qYwC7pAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_qJgwR5AdEe2sRfgUDbOZOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mxPoQZArEe2ynf83YK38HQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_qJgwR5AdEe2sRfgUDbOZOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC2JAdEe2sRfgUDbOZOA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
