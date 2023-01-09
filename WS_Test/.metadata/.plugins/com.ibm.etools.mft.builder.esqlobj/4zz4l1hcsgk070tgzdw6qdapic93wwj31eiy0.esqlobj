@@ -1,0 +1,9 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		
+		Set Environment.Data = PASSTHRU(query);
+		
+		SET OutputRoot.JSON.Data.Recordes=Environment.Data;
+
+		RETURN TRUE;
+	END;

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationNodeConnectionParameters Version="11.0.0" host="192.168.12.191" listenerPort="4415" userName="aceadmin" xmlns="http://www.ibm.com/xmlns/prod/ace/11"/>

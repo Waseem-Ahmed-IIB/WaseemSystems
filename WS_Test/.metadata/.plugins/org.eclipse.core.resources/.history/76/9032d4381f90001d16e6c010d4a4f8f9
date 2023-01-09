@@ -1,0 +1,14 @@
+
+Declare query CHARACTER 'Select * from NAme';
+
+CREATE COMPUTE MODULE postGetData_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		Set Environment.Data = PASSTHRU(query);
+		
+		SET OutputRoot.JSON.Data.Recordes=Environment.Data;
+
+		RETURN TRUE;
+	END;
+END MODULE;

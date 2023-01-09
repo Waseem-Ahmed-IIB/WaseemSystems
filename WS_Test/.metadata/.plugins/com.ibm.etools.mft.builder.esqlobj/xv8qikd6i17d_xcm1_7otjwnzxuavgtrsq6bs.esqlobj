@@ -1,0 +1,9 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		
+		SET Environment.Data = PASSTHRU('select * from iibsvc.configuration_parameter where id = 25');	
+		SET OutputRoot.JSON.Data.Recordes=Environment.Data;
+		
+		PROPAGATE TO TERMINAL 'out1';
+		RETURN TRUE;
+	END;
