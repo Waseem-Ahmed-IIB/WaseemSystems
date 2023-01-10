@@ -62,15 +62,14 @@
 <ConfigurableProperty uri="gen.MetaInquiry#monitoringProfile"/>
 <ConfigurableProperty uri="gen.MetaInquiry#startMode"/>
 <ConfigurableProperty uri="gen.MetaInquiry#startInstancesWhenFlowStarts"/>
-<ConfigurableProperty override="MetaInquiry" uri="gen.MetaInquiry#loggerName"/>
 <ConfigurableProperty override="/metainquiry/v1*" uri="gen.MetaInquiry#HTTP Input.URLSpecifier"/>
-<ConfigurableProperty override="yes" uri="gen.MetaInquiry#HTTP Input.useHTTPS"/>
+<ConfigurableProperty uri="gen.MetaInquiry#HTTP Input.useHTTPS"/>
 <ConfigurableProperty uri="gen.MetaInquiry#HTTP Input.decompressInputMessage"/>
 <ConfigurableProperty uri="gen.MetaInquiry#HTTP Input.timeoutForClient"/>
 <ConfigurableProperty override="HTML" uri="gen.MetaInquiry#HTTP Input.faultFormat"/>
 <ConfigurableProperty uri="gen.MetaInquiry#HTTP Input.validateMaster"/>
 <ConfigurableProperty uri="gen.MetaInquiry#HTTP Input.securityProfileName"/>
 <ConfigurableProperty uri="gen.MetaInquiry#HTTP Reply.validateMaster"/>
-<ConfigurableProperty uri="gen.MetaInquiry#ExceptionResponse.statusUpdateRequired"/>
+<ConfigurableProperty override="MetaInquiry" uri="gen.MetaInquiry#postInquiry (Implementation).loggerName"/>
 </CompiledMessageFlow>
 </Broker>

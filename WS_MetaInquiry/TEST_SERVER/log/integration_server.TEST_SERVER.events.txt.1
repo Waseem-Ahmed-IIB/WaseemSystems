@@ -1,62 +1,43 @@
-2022-12-29 11:46:31.922522Z: [Thread 39884] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.8' (64-bit) 
-2022-12-29 11:46:36.287680Z: [Thread 39884] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:46:36.293484Z: [Thread 39884] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:46:36.318344Z: [Thread 39884] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:46:36.343152Z: [Thread 39884] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:46:38.348828Z: [Thread 39884] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:46:39.305888Z: [Thread 39884] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'https' connections. 
-2022-12-29 11:46:39.306392Z: [Thread 39884] (Msg 1/1) BIP1996I: Listening on HTTP URL '/metainquiry/v1*'. 
-2022-12-29 11:46:39.307928Z: [Thread 39884] (Msg 1/1) BIP2269I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
-2022-12-29 11:46:40.758900Z: [Thread 10016] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
-2022-12-29 11:46:40.785172Z: [Thread 10016] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
-2022-12-29 11:46:40.791536Z: [Thread 39884] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
-2022-12-29 11:47:30.654720Z: [Thread 24496] (Msg 1/1) BIP2152I: Configuration message received. 
-2022-12-29 11:47:31.125796Z: [Thread 24496] (Msg 1/1) BIP9339W: The values defined in the policy(s) 'MQEndpoint' in policy project 'PolicyProject' match the values of the existing policy(s). Any deployed resources using the policy(s) will not be affected by the redeploy of the policy project. 
-2022-12-29 11:47:31.126206Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:47:34.423708Z: [Thread 24496] (Msg 1/1) BIP2271I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') successfully stopped. 
-2022-12-29 11:47:34.424864Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:34.425540Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:34.426180Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:47:34.465908Z: [Thread 24496] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7803' for 'https' connections. 
-2022-12-29 11:47:34.491820Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:34.871144Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:34.886908Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:34.931420Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:47:34.977660Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
-2022-12-29 11:47:36.015972Z: [Thread 24496] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'CBSLibrary/$mqsiLibrary.bir'. 
-2022-12-29 11:47:38.235372Z: [Thread 24496] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'CBSLibrary/$mqsiLibrary.dpif'. 
-2022-12-29 11:47:38.325644Z: [Thread 24496] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'CommonLibrary/$mqsiLibrary.bir'. 
-2022-12-29 11:47:38.387792Z: [Thread 24496] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'CommonLibrary/$mqsiLibrary.dpif'. 
-2022-12-29 11:47:38.563028Z: [Thread 24496] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'UBLCommonLibrary/$mqsiLibrary.bir'. 
-2022-12-29 11:47:38.622900Z: [Thread 24496] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'UBLCommonLibrary/$mqsiLibrary.dpif'. 
-2022-12-29 11:47:38.883992Z: [Thread 24496] (Msg 1/1) BIP9332I: SharedLibrary 'CBSLibrary' has been changed successfully. 
-2022-12-29 11:47:38.884228Z: [Thread 24496] (Msg 1/1) BIP9332I: SharedLibrary 'CommonLibrary' has been changed successfully. 
-2022-12-29 11:47:38.884352Z: [Thread 24496] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:47:39.218988Z: [Thread 24496] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'https' connections. 
-2022-12-29 11:47:39.219900Z: [Thread 24496] (Msg 1/1) BIP1996I: Listening on HTTP URL '/metainquiry/v1*'. 
-2022-12-29 11:47:39.221820Z: [Thread 24496] (Msg 1/1) BIP2269I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
-2022-12-29 11:47:39.222152Z: [Thread 24496] (Msg 1/1) BIP9332I: RestAPI 'MetaInquiry' has been changed successfully. 
-2022-12-29 11:47:39.222440Z: [Thread 24496] (Msg 1/1) BIP9332I: SharedLibrary 'UBLCommonLibrary' has been changed successfully. 
-2022-12-29 11:47:39.222672Z: [Thread 24496] (Msg 1/1) BIP9326I: The source 'MetaInquiry.bar' has been successfully deployed. 
-2022-12-29 11:47:39.223736Z: [Thread 24496] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
-2022-12-29 11:48:34.056720Z: [Thread 7320] (Msg 1/1) BIP2152I: Configuration message received. 
-2022-12-29 11:48:34.073380Z: [Thread 7320] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:48:34.336392Z: [Thread 7320] (Msg 1/1) BIP2271I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') successfully stopped. 
-2022-12-29 11:48:34.336752Z: [Thread 7320] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:48:34.365772Z: [Thread 7320] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7803' for 'https' connections. 
-2022-12-29 11:48:34.410508Z: [Thread 7320] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:48:34.544280Z: [Thread 7320] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
-2022-12-29 11:48:34.861188Z: [Thread 7320] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'https' connections. 
-2022-12-29 11:48:34.861632Z: [Thread 7320] (Msg 1/1) BIP1996I: Listening on HTTP URL '/metainquiry/v1*'. 
-2022-12-29 11:48:34.862628Z: [Thread 7320] (Msg 1/1) BIP2269I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
-2022-12-29 11:48:34.862772Z: [Thread 7320] (Msg 1/1) BIP9332I: RestAPI 'MetaInquiry' has been changed successfully. 
-2022-12-29 11:48:34.862872Z: [Thread 7320] (Msg 1/1) BIP9326I: The source 'MetaInquiryproject.generated.bar' has been successfully deployed. 
-2022-12-29 11:48:34.863304Z: [Thread 7320] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
-2022-12-29 11:50:22.918650Z: [Thread 37100] (Msg 1/1) BIP2152I: Configuration message received. 
-2022-12-29 11:50:22.941570Z: [Thread 37100] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'DATE' of type 'RestAPI'. 
-2022-12-29 11:50:22.969594Z: [Thread 37100] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'DATE' of type 'RestAPI'. 
-2022-12-29 11:50:22.970296Z: [Thread 37100] (Msg 1/1) BIP1996I: Listening on HTTP URL '/api*'. 
-2022-12-29 11:50:22.970656Z: [Thread 37100] (Msg 1/1) BIP2269I: Deployed resource 'gen.DATE' (uuid='gen.DATE',type='MessageFlow') started successfully. 
-2022-12-29 11:50:22.970780Z: [Thread 37100] (Msg 1/1) BIP9332I: RestAPI 'DATE' has been created successfully. 
-2022-12-29 11:50:22.970964Z: [Thread 37100] (Msg 1/1) BIP9326I: The source 'DATEproject.generated.bar' has been successfully deployed. 
-2022-12-29 11:50:22.971396Z: [Thread 37100] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2023-01-10 11:19:25.626214Z: [Thread 23672] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.8' (64-bit) 
+2023-01-10 11:19:29.219590Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:29.224384Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:29.242354Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'DATE' of type 'RestAPI'. 
+2023-01-10 11:19:29.244652Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:29.269356Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:30.497334Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'DATE' of type 'RestAPI'. 
+2023-01-10 11:19:31.274198Z: [Thread 23672] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'https' connections. 
+2023-01-10 11:19:31.274624Z: [Thread 23672] (Msg 1/1) BIP1996I: Listening on HTTP URL '/api*'. 
+2023-01-10 11:19:31.275082Z: [Thread 23672] (Msg 1/1) BIP2269I: Deployed resource 'gen.DATE' (uuid='gen.DATE',type='MessageFlow') started successfully. 
+2023-01-10 11:19:31.275276Z: [Thread 23672] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:31.276302Z: [Thread 23672] (Msg 1/1) BIP1996I: Listening on HTTP URL '/metainquiry/v1*'. 
+2023-01-10 11:19:31.277666Z: [Thread 23672] (Msg 1/1) BIP2269I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
+2023-01-10 11:19:33.030700Z: [Thread 13152] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2023-01-10 11:19:33.052936Z: [Thread 13152] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2023-01-10 11:19:33.055016Z: [Thread 23672] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2023-01-10 11:19:52.946912Z: [Thread 43232] (Msg 1/1) BIP2152I: Configuration message received. 
+2023-01-10 11:19:53.167192Z: [Thread 43232] (Msg 1/1) BIP9339W: The values defined in the policy(s) 'MQEndpoint' in policy project 'PolicyProject' match the values of the existing policy(s). Any deployed resources using the policy(s) will not be affected by the redeploy of the policy project. 
+2023-01-10 11:19:53.168356Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:56.331400Z: [Thread 43232] (Msg 1/1) BIP2271I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') successfully stopped. 
+2023-01-10 11:19:56.332040Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:56.333416Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:56.333764Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:56.364440Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:56.541488Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:56.546460Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:56.564752Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:56.578428Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 11:19:57.327044Z: [Thread 43232] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'CBSLibrary/$mqsiLibrary.bir'. 
+2023-01-10 11:19:59.145572Z: [Thread 43232] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'CBSLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 11:19:59.223612Z: [Thread 43232] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'CommonLibrary/$mqsiLibrary.bir'. 
+2023-01-10 11:19:59.276732Z: [Thread 43232] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'CommonLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 11:19:59.406772Z: [Thread 43232] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'UBLCommonLibrary/$mqsiLibrary.bir'. 
+2023-01-10 11:19:59.461504Z: [Thread 43232] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'UBLCommonLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 11:19:59.656108Z: [Thread 43232] (Msg 1/1) BIP9332I: SharedLibrary 'CBSLibrary' has been changed successfully. 
+2023-01-10 11:19:59.656452Z: [Thread 43232] (Msg 1/1) BIP9332I: SharedLibrary 'CommonLibrary' has been changed successfully. 
+2023-01-10 11:19:59.656544Z: [Thread 43232] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 11:19:59.657152Z: [Thread 43232] (Msg 1/1) BIP1996I: Listening on HTTP URL '/metainquiry/v1*'. 
+2023-01-10 11:19:59.658048Z: [Thread 43232] (Msg 1/1) BIP2269I: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
+2023-01-10 11:19:59.658180Z: [Thread 43232] (Msg 1/1) BIP9332I: RestAPI 'MetaInquiry' has been changed successfully. 
+2023-01-10 11:19:59.658276Z: [Thread 43232] (Msg 1/1) BIP9332I: SharedLibrary 'UBLCommonLibrary' has been changed successfully. 
+2023-01-10 11:19:59.658348Z: [Thread 43232] (Msg 1/1) BIP9326I: The source 'MetaInquiry.bar' has been successfully deployed. 
+2023-01-10 11:19:59.658792Z: [Thread 43232] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 

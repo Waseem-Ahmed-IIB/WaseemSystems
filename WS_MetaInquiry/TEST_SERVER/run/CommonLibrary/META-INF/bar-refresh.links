@@ -53,7 +53,7 @@
       <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file CommonLibrary\com\systemsltd\common\logging\CommonLoggingModules.esql.&#xA;Dependent ESQL file com/systemsltd/common/logging/LogMessageHelper.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file com/systemsltd/common/CommonModules.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file com/systemsltd/common/logging/LogHandler.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file com/systemsltd/common/database/CommonDatabaseModules.esql is added to the BAR file.&#xA;&#xA;Dependent ESQL file com/systemsltd/common/logging/LogMessageModules.esql is added to the BAR file.&#xA;&#xA;Successfully added file CommonLibrary\com\systemsltd\common\logging\CommonLoggingModules.esql to BAR file.&#xA;" severity="0"/>
       <barEntry name="com\systemsltd\common\logging\CommonLoggingModules.esql"/>
     </deployable>
-    <deployable deployed="true" barResourceTimeStamp="1670570333549" workspaceResource="/CommonLibrary/com/systemsltd/common/logging/LogHandler.esql">
+    <deployable deployed="true" barResourceTimeStamp="1673349708045" workspaceResource="/CommonLibrary/com/systemsltd/common/logging/LogHandler.esql">
       <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file CommonLibrary\com\systemsltd\common\logging\LogHandler.esql.&#xA;Successfully added file CommonLibrary\com\systemsltd\common\logging\LogHandler.esql to BAR file.&#xA;" severity="0"/>
       <barEntry name="com\systemsltd\common\logging\LogHandler.esql"/>
     </deployable>
@@ -138,16 +138,16 @@
       <barEntry name="library.descriptor"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1669983681627" workspaceResource="/DatabaseProject/StatementGeneratorPDFJava/.classpath">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.009 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.123 second(s).&#xA;" severity="0"/>
       <barEntry name="DatabaseProject.jar"/>
     </deployable>
     <deployable workspaceResource="/DatabaseProject/StatementGeneratorPDFJava/.project"/>
     <deployable deployed="true" barResourceTimeStamp="1669983681627" workspaceResource="/DatabaseProject/StatementGeneratorPDFJava/StatementGeneratorPDFJava.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\StatementGeneratorPDFJava.jar.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\StatementGeneratorPDFJava.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\StatementGeneratorPDFJava.jar.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\StatementGeneratorPDFJava.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="StatementGeneratorPDFJava/StatementGeneratorPDFJava.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333529" workspaceResource="/CommonJava/.classpath">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file CommonJava\.classpath.&#xA;Successfully added file CommonJava\.classpath to BAR file.&#xA;Elapsed time: 0.054 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file CommonJava\.classpath.&#xA;Successfully added file CommonJava\.classpath to BAR file.&#xA;Elapsed time: 0.03 second(s).&#xA;" severity="0"/>
       <barEntry name="CommonJava.jar"/>
     </deployable>
     <deployable workspaceResource="/CommonJava/CommonJava.jar">

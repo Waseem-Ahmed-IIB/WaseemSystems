@@ -18,11 +18,11 @@
       <barEntry name="PlaceholderSchema.xsd"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1669983675278" workspaceResource="/UBLCommonLibrary/StatementGeneratorPDFJava.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonLibrary\StatementGeneratorPDFJava.jar.&#xA;Successfully added file UBLCommonLibrary\StatementGeneratorPDFJava.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonLibrary\StatementGeneratorPDFJava.jar.&#xA;Successfully added file UBLCommonLibrary\StatementGeneratorPDFJava.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="StatementGeneratorPDFJava.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1669983675278" workspaceResource="/UBLCommonLibrary/UBLCommonJava.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonLibrary\UBLCommonJava.jar.&#xA;Successfully added file UBLCommonLibrary\UBLCommonJava.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonLibrary\UBLCommonJava.jar.&#xA;Successfully added file UBLCommonLibrary\UBLCommonJava.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="UBLCommonJava.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1669983675278" workspaceResource="/UBLCommonLibrary/com/systemsltd/ubl/common/AccountConversionModules.esql">
@@ -178,7 +178,7 @@
       <barEntry name="library.descriptor"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1669983681627" workspaceResource="/DatabaseProject/StatementGeneratorPDFJava/.classpath">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.004 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file DatabaseProject\StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file DatabaseProject\StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.006 second(s).&#xA;" severity="0"/>
       <barEntry name="DatabaseProject.jar"/>
     </deployable>
     <deployable workspaceResource="/DatabaseProject/StatementGeneratorPDFJava/.project"/>
@@ -186,38 +186,38 @@
       <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="JAR file StatementGeneratorPDFJava.jar can not added to the BAR file because another resource with the&#xA;same name has already been added. Ensure that the included Java project names&#xA;do not collide with JAR file names. Rename the JAR file causing name collision&#xA;or remove it from the workspace." severity="4"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333778" workspaceResource="/UBLCommonJava/.classpath">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\.classpath.&#xA;Successfully added file UBLCommonJava\.classpath to BAR file.&#xA;Elapsed time: 0.025 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\.classpath.&#xA;Successfully added file UBLCommonJava\.classpath to BAR file.&#xA;Elapsed time: 0.009 second(s).&#xA;" severity="0"/>
       <barEntry name="UBLCommonJava.jar"/>
     </deployable>
     <deployable workspaceResource="/UBLCommonJava/UBLCommonJava.jar">
       <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="JAR file UBLCommonJava.jar can not added to the BAR file because another resource with the&#xA;same name has already been added. Ensure that the included Java project names&#xA;do not collide with JAR file names. Rename the JAR file causing name collision&#xA;or remove it from the workspace." severity="4"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333789" workspaceResource="/UBLCommonJava/io-7.1.11.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\io-7.1.11.jar.&#xA;Successfully added file UBLCommonJava\io-7.1.11.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\io-7.1.11.jar.&#xA;Successfully added file UBLCommonJava\io-7.1.11.jar to BAR file.&#xA;Elapsed time: 0.003 second(s).&#xA;" severity="0"/>
       <barEntry name="io-7.1.11.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333796" workspaceResource="/UBLCommonJava/json-20180813.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\json-20180813.jar.&#xA;Successfully added file UBLCommonJava\json-20180813.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\json-20180813.jar.&#xA;Successfully added file UBLCommonJava\json-20180813.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="json-20180813.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333804" workspaceResource="/UBLCommonJava/kernel-7.1.2.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\kernel-7.1.2.jar.&#xA;Successfully added file UBLCommonJava\kernel-7.1.2.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\kernel-7.1.2.jar.&#xA;Successfully added file UBLCommonJava\kernel-7.1.2.jar to BAR file.&#xA;Elapsed time: 0.004 second(s).&#xA;" severity="0"/>
       <barEntry name="kernel-7.1.2.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333816" workspaceResource="/UBLCommonJava/layout-7.1.11.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\layout-7.1.11.jar.&#xA;Successfully added file UBLCommonJava\layout-7.1.11.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\layout-7.1.11.jar.&#xA;Successfully added file UBLCommonJava\layout-7.1.11.jar to BAR file.&#xA;Elapsed time: 0.003 second(s).&#xA;" severity="0"/>
       <barEntry name="layout-7.1.11.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333821" workspaceResource="/UBLCommonJava/logging-java.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\logging-java.jar.&#xA;Successfully added file UBLCommonJava\logging-java.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\logging-java.jar.&#xA;Successfully added file UBLCommonJava\logging-java.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="logging-java.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333821" workspaceResource="/UBLCommonJava/slf4j-api-1.7.13.jar">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\slf4j-api-1.7.13.jar.&#xA;Successfully added file UBLCommonJava\slf4j-api-1.7.13.jar to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file UBLCommonJava\slf4j-api-1.7.13.jar.&#xA;Successfully added file UBLCommonJava\slf4j-api-1.7.13.jar to BAR file.&#xA;Elapsed time: 0.001 second(s).&#xA;" severity="0"/>
       <barEntry name="slf4j-api-1.7.13.jar"/>
     </deployable>
     <deployable deployed="true" barResourceTimeStamp="1670570333621" workspaceResource="/StatementGeneratorPDFJava/.classpath">
-      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.028 second(s).&#xA;" severity="0"/>
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file StatementGeneratorPDFJava\.classpath.&#xA;Successfully added file StatementGeneratorPDFJava\.classpath to BAR file.&#xA;Elapsed time: 0.007 second(s).&#xA;" severity="0"/>
       <barEntry name="StatementGeneratorPDFJava.jar"/>
     </deployable>
     <deployable workspaceResource="/StatementGeneratorPDFJava/StatementGeneratorPDFJava.jar">

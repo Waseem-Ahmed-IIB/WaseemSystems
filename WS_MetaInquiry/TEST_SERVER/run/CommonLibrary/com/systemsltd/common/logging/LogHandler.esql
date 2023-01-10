@@ -8,6 +8,7 @@ BROKER SCHEMA com.systemsltd.common.logging
 
 CREATE FUNCTION logMessage(IN loggerName CHARACTER, IN logLevel CHARACTER, IN message CHARACTER)
 BEGIN 
+	LOG EVENT VALUES(loggerName,logLevel,message);
 END;
 
 CREATE FUNCTION logEnabled(IN loggerName CHARACTER, IN logLevel CHARACTER)
