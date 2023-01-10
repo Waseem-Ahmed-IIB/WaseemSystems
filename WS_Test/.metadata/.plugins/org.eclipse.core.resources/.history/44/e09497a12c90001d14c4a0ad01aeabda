@@ -4,9 +4,8 @@ Declare query CHARACTER 'Select * from MY_USER_DETAILS WHERE USER_ID = 1';
 CREATE COMPUTE MODULE postGetData_Compute
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
-		
-		SET Environment.Data = PASSTHRU('select * from iibsvc.configuration_parameter where id ='|| InputRoot.JSON.Data.ID);	
-		SET OutputRoot.JSON.Data.Recordes=Environment.Data;
+			
+		SET OutputRoot.JSON.Data.Recordes='HELLO WORLD';
 		
 		--PROPAGATE TO TERMINAL 'out1';
 		RETURN TRUE;

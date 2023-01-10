@@ -1,0 +1,8 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+			
+		SET OutputRoot.JSON.Data.Recordes='HELLO WORLD';
+		
+		--PROPAGATE TO TERMINAL 'out1';
+		RETURN TRUE;
+	END;
