@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?><Broker>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#IIBDataSource"/>
+<ConfigurableProperty override="OMNIDSN" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNIDataSource"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNI Response Mapping.hostSystem"/>
+<ConfigurableProperty override="Root.XMLNSC.OMNI_DEBIT_CARD_VALIDATION_RESPONSE.P_RET_VALUE" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNI Response Mapping.hostSystemResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.ErrorCode" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNI Response Mapping.mappedResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Error.Item" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNI Response Mapping.mappedResponseDescPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#OMNI Response Mapping.hostSystemResponseDetailsPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#AccountValidationRequest.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#AccountValidationRequest.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#AccountValidationResponse.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#AccountValidationResponse.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.asyncProcessingRequired"/>
+<ConfigurableProperty override="OMNI - Debit Card Validation Request Prepared" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.sourceSystem"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.destinationSystem"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Request.queueName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="OMNI - Debit Card Validation Response Received" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.decoration"/>
+<ConfigurableProperty override="InputRoot.XMLNSC.OMNI_FUNDSTRANSFER_RESPONSE.P_RET_VALUE = '0'" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.sourceSystem"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#Log OMNI Response.queueName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#getMaskedCardInfo.CardFlag"/>
+<ConfigurableProperty override="Environment.Variables.pan" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#getMaskedCardInfo.CardNoPath"/>
+<ConfigurableProperty override="Environment.Variables.cnic" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#getMaskedCardInfo.CnicPath"/>
+<ConfigurableProperty override="Environment.Variables.isMasked" uri="com.systemsltd.ubl.common.accountValidation.OMNIDebitCardValidation#getMaskedCardInfo.maskRequiredPath"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.TransactionStatus" type="subflow">
+<ConfigurableProperty override="TITLE_FETCH" uri="com.systemsltd.ubl.common.TransactionStatus#TransactionType"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#TransactionSubType"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionStatus#Get Status.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Get Status.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Get Status.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.fileLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Status Request" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Status" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.idPath"/>
+<ConfigurableProperty override="InputRoot.JSON.Data.serviceHeader.channel" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.destinationSystem"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Request.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.fileLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Status Response" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Status" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.idPath"/>
+<ConfigurableProperty override="InputRoot.JSON.Data.serviceHeader.channel" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionStatus#Log JSON Response.dataSource"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionStatus#Validation Errors.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Validation Errors.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Prepare Error.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Prepare Error.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Prepare Error.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.asyncOverrideRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.groupEntryRequired"/>
+<ConfigurableProperty override="SOA.FT.REQUEST" uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.processingQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.responseQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.syncOverrideRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.authenticationRequired"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.transactionDetailInsertRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.loggerName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#SaveTransaction.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Set TransactionSubType.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionStatus#Set TransactionSubType.connectDatasourceBeforeFlowStarts"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.routing.HostSystemRouting" type="subflow">
+<ConfigurableProperty override="InputRoot.JSON.Data.titleFetchRequest.accountDetail" uri="com.systemsltd.ubl.common.routing.HostSystemRouting#fromAccountDetailPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.routing.HostSystemRouting#toAccountDetailPath"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.routing.HostSystemRouting#Route To Host System.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.routing.HostSystemRouting#Route To Host System.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.routing.HostSystemRouting#Route To Host System.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.routing.HostSystemRouting#Route.distributionMode"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.getMaskedCardInfo" type="subflow">
+<ConfigurableProperty override="DC" uri="com.systemsltd.ubl.common.getMaskedCardInfo#CardFlag"/>
+<ConfigurableProperty override="Root.JSON.Data" uri="com.systemsltd.ubl.common.getMaskedCardInfo#CardNoPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#CnicPath"/>
+<ConfigurableProperty override="Root.JSON.Data" uri="com.systemsltd.ubl.common.getMaskedCardInfo#maskRequiredPath"/>
+<ConfigurableProperty override="IRISDSN" uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call DC.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call DC.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call DC.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#is Credit or Debit Card Unmasking Required .dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#is Credit or Debit Card Unmasking Required .connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty override="PRIMEDSN" uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call CC.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call CC.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Prepare and Call CC.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#route.distributionMode"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.getMaskedCardInfo#ValidationErrorHandler.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#ValidationErrorHandler.statusUpdateRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Error Response" uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.queueName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.getMaskedCardInfo#Log Error Response.dataSource"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ResponseMapping" type="subflow">
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.ResponseMapping#MappingDatasource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#hostSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#hostSystemResponseCodePath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#mappedResponseCodePath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#mappedResponseDescPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#loggerName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#hostSystemResponseDetailsPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ResponseMapping#Map Response.connectDatasourceBeforeFlowStarts"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ValidationErrorHandler" type="subflow">
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.ValidationErrorHandler#dataSource"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.ValidationErrorHandler#statusUpdateRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ValidationErrorHandler#Validation Error Exists.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ValidationErrorHandler#Validation Error Exists.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ValidationErrorHandler#Prepare Validation Response.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ValidationErrorHandler#Prepare Validation Response.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ExceptionProcessing" type="subflow">
+<ConfigurableProperty override="InputRoot.JSON.Data" uri="com.systemsltd.ubl.common.ExceptionProcessing#requestPath"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.ExceptionProcessing#statusUpdateRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionProcessing#arrayToListConversionRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionProcessing#loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.ExceptionProcessing#Prepare Exception Response.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionProcessing#Prepare Exception Response.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionProcessing#Prepare Exception Response.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation" type="subflow">
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#IIBDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#loggerName"/>
+<ConfigurableProperty override="OMNIDSN" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNIDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#AccountValidationRequest.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#AccountValidationRequest.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.fileLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.asyncProcessingRequired"/>
+<ConfigurableProperty override="OMNI - Account Validation Request Prepared" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.sourceSystem"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.destinationSystem"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Request.queueName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#AccountValidationResponse.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#AccountValidationResponse.validateMaster"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNI Response Mapping.hostSystem"/>
+<ConfigurableProperty override="Root.XMLNSC.OMNI_ACCOUNT_VALIDATION_RESPONSE.P_RET_VALUE" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNI Response Mapping.hostSystemResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.ErrorCode" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNI Response Mapping.mappedResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Error.Item" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNI Response Mapping.mappedResponseDescPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#OMNI Response Mapping.hostSystemResponseDetailsPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="OMNI - Account Validation Response Received" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.decoration"/>
+<ConfigurableProperty override="InputRoot.XMLNSC.OMNI_FUNDSTRANSFER_RESPONSE.P_RET_VALUE = '0'" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.sourceSystem"/>
+<ConfigurableProperty override="OMNI" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.OMNIAccountValidation#Log OMNI Response.queueName"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.SaveTransaction" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#asyncOverrideRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#groupEntryRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#processingQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#responseQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#syncOverrideRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.SaveTransaction#authenticationRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.SaveTransaction#transactionDetailInsertRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#loggerName"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.SaveTransaction#fileLoggingRequired"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#Save Transaction.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Save Transaction.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#Validate Request.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Validate Request.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Error Response" uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#Log Error Response.dataSource"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#ValidationErrorHandler.dataSource"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.SaveTransaction#ValidationErrorHandler.statusUpdateRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.asyncProcessingRequired"/>
+<ConfigurableProperty override="Request Received" uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#Log Request Message.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Insert in TransactionDetail Required.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Insert in TransactionDetail Required.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#Get Region Mapping.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.SaveTransaction#Get Region Mapping.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#ValidationErrorHandler1.dataSource"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.SaveTransaction#ValidationErrorHandler1.statusUpdateRequired"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.SaveTransaction#ValidateAccount.IIBDataSource"/>
+<ConfigurableProperty override="CBSDSN" uri="com.systemsltd.ubl.common.SaveTransaction#ValidateAccount.CBSDataSource"/>
+<ConfigurableProperty override="OMNIDSN" uri="com.systemsltd.ubl.common.SaveTransaction#ValidateAccount.OMNIDataSource"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ProcessAccountConversion" type="subflow">
+<ConfigurableProperty override="OutputRoot.JSON.Data.accountIdentifier.accountNumber" uri="com.systemsltd.ubl.common.ProcessAccountConversion#accountNumberPath"/>
+<ConfigurableProperty override="OutputRoot.JSON.Data.branchInfo.branchCode" uri="com.systemsltd.ubl.common.ProcessAccountConversion#branchCodePath"/>
+<ConfigurableProperty override="Root.JSON.Data.accountIdentifier.iban" uri="com.systemsltd.ubl.common.ProcessAccountConversion#ibanPath"/>
+<ConfigurableProperty override="Root.JSON.Data.cardInfo.cardNumber" uri="com.systemsltd.ubl.common.ProcessAccountConversion#cardNumberPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#loggerName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#bankIMDPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform IBAN Conversion.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform IBAN Conversion.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform IBAN Conversion.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Account Conversion Required.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Account Conversion Required.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Route by Request.distributionMode"/>
+<ConfigurableProperty override="IRISDSN" uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform Card Conversion.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform Card Conversion.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#Perform Card Conversion.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#is Conversion Success.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ProcessAccountConversion#is Conversion Success.connectDatasourceBeforeFlowStarts"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.TransactionDetailStatus" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#TransactionType"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#TransactionSubType"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#loggerName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.fileLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Detail Status Request" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Status" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.idPath"/>
+<ConfigurableProperty override="InputRoot.JSON.Data.serviceHeader.channel" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.destinationSystem"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Request.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Prepare Error.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Prepare Error.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Prepare Error.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="Log Detail Status Response" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.status"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Status" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.idPath"/>
+<ConfigurableProperty override="InputRoot.JSON.Data.serviceHeader.channel" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Log JSON Response.dataSource"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Get Detail Status.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Get Detail Status.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Get Detail Status.validateMaster"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.TransactionDetailStatus#Validation Errors.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Validation Errors.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.asyncOverrideRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.groupEntryRequired"/>
+<ConfigurableProperty override="SOA.FT.REQUEST" uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.processingQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.responseQueue"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.syncOverrideRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.authenticationRequired"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.transactionDetailInsertRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#SaveTransaction.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Set TransactionSubType.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.TransactionDetailStatus#Set TransactionSubType.connectDatasourceBeforeFlowStarts"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#IIBDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBSDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#AccountValidationRequest.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#AccountValidationRequest.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#AccountValidationResponse.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#AccountValidationResponse.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.asyncProcessingRequired"/>
+<ConfigurableProperty override="CBS - Account Validation Request Prepared" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Request.queueName"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.asyncProcessingRequired"/>
+<ConfigurableProperty override="CBS - Account Validation Response Prepared" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#Log CBS Response.queueName"/>
+<ConfigurableProperty override="CBS" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBS Response Mapping.hostSystem"/>
+<ConfigurableProperty override="Root.XMLNSC.CBS_FINTECH_OUT.RESP_CODE" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBS Response Mapping.hostSystemResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.ErrorCode" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBS Response Mapping.mappedResponseCodePath"/>
+<ConfigurableProperty override="Environment.Variables.Transaction.Error.Item" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBS Response Mapping.mappedResponseDescPath"/>
+<ConfigurableProperty override="Root.XMLNSC.CBS_FINTECH_OUT.RESP_MSG" uri="com.systemsltd.ubl.common.accountValidation.CBSAccountValidation#CBS Response Mapping.hostSystemResponseDetailsPath"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ExceptionResponse" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#loggerName"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.ExceptionResponse#statusUpdateRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#Prepare Exception Response.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#Prepare Exception Response.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#Prepare Exception Response.validateMaster"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.ExceptionResponse#Update Transaction Detail Status.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#Update Transaction Detail Status.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.fileLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.databaseLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.asyncProcessingRequired"/>
+<ConfigurableProperty override="Failure Response Prepared" uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.idPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.deleteMessageId"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.queueName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.ExceptionResponse#LogMessage.dataSource"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.ExceptionResponseMapping" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponseMapping#mappedResponseCodePath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponseMapping#mappedResponseDescPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponseMapping#Map Exception.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponseMapping#Map Exception.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.ExceptionResponseMapping#Map Exception.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.PopulateReferenceIdInLocalEnv" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PopulateReferenceIdInLocalEnv#hostRefIdPath"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PopulateReferenceIdInLocalEnv#Compute.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PopulateReferenceIdInLocalEnv#Compute.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PopulateReferenceIdInLocalEnv#Compute.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.PostProcessing" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PostProcessing#loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.PostProcessing#Database.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.PostProcessing#Database.connectDatasourceBeforeFlowStarts"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.accountValidation.ValidateAccount" type="subflow">
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#IIBDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#loggerName"/>
+<ConfigurableProperty override="CBSDSN" uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#CBSDataSource"/>
+<ConfigurableProperty override="OMNIDSN" uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#OMNIDataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#IsAccountValidationRequired.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#IsAccountValidationRequired.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.accountValidation.ValidateAccount#Route.distributionMode"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="com.systemsltd.ubl.common.HostDatabaseRequestResponse" type="subflow">
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#dataSource"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#asyncProcessingRequired"/>
+<ConfigurableProperty override="LOG.MESSAGE.IN" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#queueName"/>
+<ConfigurableProperty override="false" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#databaseLoggingRequired"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#fileLoggingRequired"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Prepare Host Request.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Prepare Host Request.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.idPath"/>
+<ConfigurableProperty override="Channel" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.sourceSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.destinationSystem"/>
+<ConfigurableProperty override="true" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.deleteMessageId"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Request.dataSource"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Call Host DB and Verify Response.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Call Host DB and Verify Response.validateMaster"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.decoration"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.status"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.idPath"/>
+<ConfigurableProperty override="IIB" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.sourceSystem"/>
+<ConfigurableProperty override="Channel" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.destinationSystem"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.newRequest"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.deleteMessageId"/>
+<ConfigurableProperty uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.loggerName"/>
+<ConfigurableProperty override="IIBDSN" uri="com.systemsltd.ubl.common.HostDatabaseRequestResponse#Log Host Response.dataSource"/>
+</CompiledMessageFlow>
+</Broker>

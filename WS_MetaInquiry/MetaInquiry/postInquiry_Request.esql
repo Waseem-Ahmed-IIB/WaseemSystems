@@ -1,0 +1,23 @@
+PATH com.systemsltd.common, com.systemsltd.common.logging, com.systemsltd.ubl.common, com.systemsltd.ubl.common.database, com.systemsltd.ubl.common.config, com.systemsltd.ubl.cbs;
+
+
+CREATE COMPUTE MODULE postInquiry_Request
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN  	
+		DECLARE serializedRequest, serializedResponse CHARACTER '';		
+		DECLARE inputProperties REFERENCE TO Environment.Variables.Transaction.Properties;
+		DECLARE cbsSchemaName CHARACTER getCBSSchemaName();
+		DECLARE dsnName CHARACTER Environment.Variables.fromRegionDataSource;
+		
+		SET serializedRequest = serializeMessage(InputRoot);
+		
+		CALL PROCESS_INQ(serializedRequest, serializedResponse) IN Database.{dsnName}.{cbsSchemaName};
+		
+		DECLARE xmlOut BLOB CAST(serializedResponse AS BLOB CCSID InputProperties.CodedCharSetId);
+		CREATE LASTCHILD OF OutputRoot DOMAIN('XMLNSC') PARSE(xmlOut, InputProperties.Encoding, InputProperties.CodedCharSetId);	
+		SET OutputRoot.Properties = Environment.Variables.Transaction.Properties;
+		CALL logInfoMessage('Response from CBS: ' || OutputRoot);
+		RETURN TRUE;
+	END;
+
+END MODULE;

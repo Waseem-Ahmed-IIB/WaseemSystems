@@ -1,0 +1,46 @@
+PATH com.systemsltd.common, com.systemsltd.common.logging, com.systemsltd.ubl.common, com.systemsltd.ubl.common.database, com.systemsltd.ubl.common.config, com.systemsltd.ubl.cbs;
+
+
+CREATE COMPUTE MODULE postInquiry_PrepareResponse
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputProperties;
+		CREATE FIELD OutputRoot.JSON.Data;
+		DECLARE outRef REFERENCE TO OutputRoot.JSON.Data;
+		DECLARE requestOut REFERENCE TO InputRoot.XMLNSC.REQUEST_OUT;
+		DECLARE envRef REFERENCE TO Environment.Variables.Transaction;
+		
+		IF (requestOut.HEADER_OUT.RESULT_CODE = '0') THEN
+			 
+--			PROPAGATE TO TERMINAL 1 DELETE NONE;
+			
+			SET outRef.serviceHeader = envRef.Request.serviceHeader;
+			SET outRef.transactionInfo = envRef.Request.transactionInfo;
+			
+			CALL copyAndConvertServiceHeader(envRef.Request.serviceHeader, outRef);
+			CALL copyAndConvertTransactionInfo(envRef.Request.transactionInfo, outRef);
+			CALL PopulateSuccessResponseHeader(outRef, 'SUCCESS');
+			SET envRef.Response = outRef;
+			DECLARE responseDetails REFERENCE TO outRef.details;
+			
+			SET responseDetails.details.rowKey = requestOut.DETAIL_OUT.META_COLUMN.ROW_KEY;
+			SET responseDetails.details.entityId = requestOut.DETAIL_OUT.META_COLUMN.ENTITY_ID;
+			SET responseDetails.details.columnId = requestOut.DETAIL_OUT.META_COLUMN.COLUMN_ID;
+			SET responseDetails.details.columnValue = requestOut.DETAIL_OUT.META_COLUMN.COLUMN_VALUE;					
+			
+			
+			
+		ELSE
+			SET Environment.Variables.Transaction.HostResponse.ErrorCode = requestOut.ERRORS.ERROR_NO;
+			PROPAGATE TO TERMINAL 1 DELETE NONE;
+			
+			CALL copyAndConvertServiceHeader(envRef.Request.serviceHeader, outRef);
+			CALL copyAndConvertTransactionInfo(envRef.Request.transactionInfo, outRef);
+			CALL populateFailureResponseHeader(outRef, envRef);
+			SET outRef.responseHeader.responseCode = Environment.Variables.Transaction.HostResponse.ErrorCode;
+			SET outRef.responseHeader.responseDescription = requestOut.ERRORS.ERROR_MSG;
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;
+

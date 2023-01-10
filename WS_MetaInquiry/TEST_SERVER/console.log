@@ -1,0 +1,49 @@
+.....2023-01-10 11:19:25.613208: .2023-01-10 16:19:25.626214: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.8' (64-bit) 
+.....................Listening for transport dt_socket at address: 9997
+....................2023-01-10 16:19:29.219590: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:29.224384: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:29.242354: About to 'Initialize' the deployed resource 'DATE' of type 'RestAPI'. 
+2023-01-10 16:19:29.244652: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:29.269356: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:30.497334: About to 'Start' the deployed resource 'DATE' of type 'RestAPI'. 
+An https endpoint was registered on port '7803', path '/api*'.
+2023-01-10 16:19:31.274198: The HTTP Listener has started listening on port '7803' for 'https' connections. 
+2023-01-10 16:19:31.274624: Listening on HTTP URL '/api*'. 
+Started native listener for HTTPS input node on port 7803 for URL /api*
+2023-01-10 16:19:31.275082: Deployed resource 'gen.DATE' (uuid='gen.DATE',type='MessageFlow') started successfully. 
+2023-01-10 16:19:31.275276: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:31.276302: Listening on HTTP URL '/metainquiry/v1*'. 
+Started native listener for HTTPS input node on port 7803 for URL /metainquiry/v1*
+2023-01-10 16:19:31.277666: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
+..2023-01-10 16:19:33.030700: IBM App Connect Enterprise administration security is inactive. 
+2023-01-10 16:19:33.052936: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+
+2023-01-10 16:19:33.055016: Integration server has finished initialization. 
+2023-01-10 16:19:52.946912: Configuration message received. 
+2023-01-10 16:19:53.167192: The values defined in the policy(s) 'MQEndpoint' in policy project 'PolicyProject' match the values of the existing policy(s). Any deployed resources using the policy(s) will not be affected by the redeploy of the policy project. 
+2023-01-10 16:19:53.168356: About to 'Stop' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:56.331400: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') successfully stopped. 
+2023-01-10 16:19:56.332040: About to 'TearDown' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:56.333416: About to 'TearDown' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:56.333764: About to 'TearDown' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:56.364440: About to 'TearDown' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:56.541488: About to 'Initialize' the deployed resource 'CBSLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:56.546460: About to 'Initialize' the deployed resource 'CommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:56.564752: About to 'Initialize' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:56.578428: About to 'Initialize' the deployed resource 'UBLCommonLibrary' of type 'SharedLibrary'. 
+2023-01-10 16:19:57.327044: Created compiled 'XMLNSC' schema file 'CBSLibrary/$mqsiLibrary.bir'. 
+2023-01-10 16:19:59.145572: Created compiled 'DFDL' schema file 'CBSLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 16:19:59.223612: Created compiled 'XMLNSC' schema file 'CommonLibrary/$mqsiLibrary.bir'. 
+2023-01-10 16:19:59.276732: Created compiled 'DFDL' schema file 'CommonLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 16:19:59.406772: Created compiled 'XMLNSC' schema file 'UBLCommonLibrary/$mqsiLibrary.bir'. 
+2023-01-10 16:19:59.461504: Created compiled 'DFDL' schema file 'UBLCommonLibrary/$mqsiLibrary.dpif'. 
+2023-01-10 16:19:59.656108: SharedLibrary 'CBSLibrary' has been changed successfully. 
+2023-01-10 16:19:59.656452: SharedLibrary 'CommonLibrary' has been changed successfully. 
+2023-01-10 16:19:59.656544: About to 'Start' the deployed resource 'MetaInquiry' of type 'RestAPI'. 
+2023-01-10 16:19:59.657152: Listening on HTTP URL '/metainquiry/v1*'. 
+Started native listener for HTTPS input node on port 7803 for URL /metainquiry/v1*
+2023-01-10 16:19:59.658048: Deployed resource 'gen.MetaInquiry' (uuid='gen.MetaInquiry',type='MessageFlow') started successfully. 
+2023-01-10 16:19:59.658180: RestAPI 'MetaInquiry' has been changed successfully. 
+2023-01-10 16:19:59.658276: SharedLibrary 'UBLCommonLibrary' has been changed successfully. 
+2023-01-10 16:19:59.658348: The source 'MetaInquiry.bar' has been successfully deployed. 
+2023-01-10 16:19:59.658792: Integration server finished with Configuration message. 

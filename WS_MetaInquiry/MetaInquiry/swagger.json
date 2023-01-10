@@ -1,0 +1,174 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "MetaInquiry",
+    "version" : "1.0.0",
+    "description" : "MetaInquiry"
+  },
+  "paths" : {
+    "/inquiry" : {
+      "post" : {
+        "operationId" : "postInquiry",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/inquiryResponse"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a inquiry",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/inquiryRequest"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/metainquiry/v1",
+  "definitions" : {
+    "serviceHeader" : {
+      "type" : "object",
+      "properties" : {
+        "channel" : {
+          "type" : "string"
+        },
+        "authInfo" : {
+          "type" : "object",
+          "properties" : {
+            "authenticationType" : {
+              "type" : "string"
+            },
+            "username" : {
+              "type" : "string"
+            },
+            "password" : {
+              "type" : "string"
+            },
+            "authKey" : {
+              "type" : "object",
+              "properties" : { }
+            }
+          }
+        },
+        "corrId" : {
+          "type" : "string"
+        }
+      }
+    },
+    "transactionInfo" : {
+      "type" : "object",
+      "properties" : {
+        "transactionType" : {
+          "type" : "string"
+        },
+        "transactionSubType" : {
+          "type" : "string"
+        },
+        "referenceId" : {
+          "type" : "string"
+        },
+        "transmissionDate" : {
+          "type" : "string"
+        },
+        "transmissionTime" : {
+          "type" : "string"
+        },
+        "transmissionDateTime" : {
+          "type" : "string"
+        },
+        "stan" : {
+          "type" : "string"
+        },
+        "attributeList" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/attribute"
+          }
+        }
+      }
+    },
+    "inquiryRequest" : {
+      "type" : "object",
+      "properties" : {
+        "serviceHeader" : {
+          "$ref" : "#/definitions/serviceHeader"
+        },
+        "transactionInfo" : {
+          "$ref" : "#/definitions/transactionInfo"
+        },
+        "details" : {
+          "type" : "object",
+          "properties" : {
+            "rowKey" : {
+              "type" : "string"
+            },
+            "entityId" : {
+              "type" : "string"
+            },
+            "columnId" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "inquiryResponse" : {
+      "type" : "object",
+      "properties" : {
+        "serviceHeader" : {
+          "$ref" : "#/definitions/serviceHeader"
+        },
+        "transactionInfo" : {
+          "$ref" : "#/definitions/transactionInfo"
+        },
+        "responseHeader" : {
+          "type" : "object",
+          "properties" : {
+            "responseCode" : {
+              "type" : "string"
+            },
+            "responseDescription" : {
+              "type" : "string"
+            }
+          }
+        },
+        "details" : {
+          "type" : "object",
+          "properties" : {
+            "rowKey" : {
+              "type" : "string"
+            },
+            "entityId" : {
+              "type" : "string"
+            },
+            "columnId" : {
+              "type" : "string"
+            },
+            "columnValue" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "attribute" : {
+      "type" : "object",
+      "properties" : {
+        "attributeKey" : {
+          "type" : "string"
+        },
+        "attributeValue" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

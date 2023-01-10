@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/soa/SOAteam/Fizza Workspace2/AccountValidationInquiryServiceJava/json-20190722.jar"/>
+	<classpathentry kind="lib" path="/var/mqsi/shared-classes/layout-7.1.11.jar"/>
+	<classpathentry kind="lib" path="/var/mqsi/shared-classes/kernel-7.1.11.jar"/>
+	<classpathentry kind="con" path="com.ibm.etools.mft.uri.classpath.MBProjectReference"/>
+	<classpathentry kind="lib" path="/var/mqsi/shared-classes/logging-java.jar"/>
+	<classpathentry kind="lib" path="/var/mqsi/shared-classes/slf4j-api-1.7.13.jar"/>
+	<classpathentry kind="lib" path="/var/mqsi/shared-classes/io-7.1.11.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CommonJava"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

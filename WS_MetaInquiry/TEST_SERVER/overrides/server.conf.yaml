@@ -1,0 +1,13 @@
+---
+RestAdminListener:
+   port: 7600
+ResourceManagers:
+  HTTPConnector:
+    ListenerPort: 7802
+  HTTPSConnector:
+    ListenerPort: 7803
+    KeystoreFile: 'D:\keypersonalcert.jks'
+    KeystorePassword: '123456'
+    KeystoreType: 'JKS'
+  JVM:
+    jvmDebugPort: 9997
