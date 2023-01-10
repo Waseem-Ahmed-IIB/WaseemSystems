@@ -7,7 +7,7 @@
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
-    <persistedState key="aggregateWorkingSetId"/>
+    <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1673269266340"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_qWIMo5AdEe2sRfgUDbOZOA" selectedElement="_qWIMpJAdEe2sRfgUDbOZOA" horizontal="true">
@@ -171,7 +171,7 @@
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_qajZwpAdEe2sRfgUDbOZOA" elementId="com.ibm.etools.mft.navigator.resource" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Application Development" iconURI="platform:/plugin/com.ibm.etools.mft.navigator/icons/full/view16/msgflow_perspective.gif" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view ProjectsMode=&quot;AppLib&quot; project_scrollbar_horizontal=&quot;0&quot; project_scrollbar_vertical=&quot;0&quot; sectionExpansion=&quot;ONLY_PROJECTS&quot; sectionExpansionFirstWeight=&quot;100&quot; sorter=&quot;0&quot; workingSetName=&quot;&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Broker Schemas&quot;/>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Message Namespaces&quot;/>&#xD;&#xA;&lt;filter element=&quot;Groups (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot;/>&#xD;&#xA;&lt;filter element=&quot;Elements And Attributes (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Messages (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Types (Schema Files)&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;0*/BARfiles/TestApp.bar&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;TestApplication&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources|Subflows&quot;/>&#xD;&#xA;&lt;element path=&quot;BARs&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;elementMap name=&quot;[TestApplication]&quot;>&#xD;&#xA;&lt;item factoryID=&quot;org.eclipse.ui.internal.model.ResourceFactory&quot; path=&quot;/TestApplication&quot; type=&quot;4&quot;/>&#xD;&#xA;&lt;/elementMap>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view ProjectsMode=&quot;AppLib&quot; project_scrollbar_horizontal=&quot;0&quot; project_scrollbar_vertical=&quot;0&quot; sectionExpansion=&quot;ONLY_PROJECTS&quot; sectionExpansionFirstWeight=&quot;100&quot; sorter=&quot;0&quot; workingSetName=&quot;&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Broker Schemas&quot;/>&#xD;&#xA;&lt;filter element=&quot;Empty Parent Message Namespaces&quot;/>&#xD;&#xA;&lt;filter element=&quot;Groups (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot;/>&#xD;&#xA;&lt;filter element=&quot;Elements And Attributes (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Messages (Schema Files)&quot;/>&#xD;&#xA;&lt;filter element=&quot;Types (Schema Files)&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;0*/BARfiles/waseemahmed.bar&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;TestApplication&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources&quot;/>&#xD;&#xA;&lt;element path=&quot;TestApplication|Resources|Subflows&quot;/>&#xD;&#xA;&lt;element path=&quot;BARs&quot;/>&#xD;&#xA;&lt;element path=&quot;Independent Resources&quot;/>&#xD;&#xA;&lt;element path=&quot;Independent Resources|BARfiles&quot;/>&#xD;&#xA;&lt;element path=&quot;Independent Resources|BARfiles|BARs&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;elementMap name=&quot;[TestApplication]&quot;>&#xD;&#xA;&lt;item factoryID=&quot;org.eclipse.ui.internal.model.ResourceFactory&quot; path=&quot;/TestApplication&quot; type=&quot;4&quot;/>&#xD;&#xA;&lt;/elementMap>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Integration Development</tags>
       <tags>active</tags>
@@ -257,7 +257,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC0pAdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dZFIIJCxEe2JE7Mj0tTEAA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_qJmMp5AdEe2sRfgUDbOZOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_oE1mkJC5Ee2gwcIFg1irxg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_qJmMp5AdEe2sRfgUDbOZOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC05AdEe2sRfgUDbOZOA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -281,7 +281,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC15AdEe2sRfgUDbOZOA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dZGWQZCxEe2JE7Mj0tTEAA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_qJgwR5AdEe2sRfgUDbOZOA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_oE3bwJC5Ee2gwcIFg1irxg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_qJgwR5AdEe2sRfgUDbOZOA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_qYwC2JAdEe2sRfgUDbOZOA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
