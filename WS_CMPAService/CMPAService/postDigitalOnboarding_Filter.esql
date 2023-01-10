@@ -1,0 +1,29 @@
+PATH com.systemsltd.common, com.systemsltd.ubl.common;
+
+CREATE FILTER MODULE postDigitalOnboarding_Filter
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE inputRef REFERENCE TO Root.JSON.Data;
+		
+		DECLARE transactionRef REFERENCE TO Environment.Variables.Transaction;
+		CREATE FIELD transactionRef.Error IDENTITY (JSON.Array);
+		
+		CALL validateServiceHeader(inputRef.serviceHeader, transactionRef);
+		
+		CALL validateTransactionInfo(inputRef.transactionInfo, transactionRef, 'VERIFY', '');
+		
+		IF NOT fieldAndValueExists(inputRef.verify.cnic, 'cnic') THEN
+			CREATE LASTCHILD OF transactionRef.Error TYPE NameValue NAME 'Item' VALUE getValidationErrorMsg('cnic');
+		END IF;
+		
+		IF NOT fieldAndValueExists(inputRef.verify.msisdn, 'msisdn') THEN
+			CREATE LASTCHILD OF transactionRef.Error TYPE NameValue NAME 'Item' VALUE getValidationErrorMsg('msisdn');
+		END IF;
+		IF NOT fieldAndValueExists(inputRef.verify.transactionID, 'transactionID') THEN
+			CREATE LASTCHILD OF transactionRef.Error TYPE NameValue NAME 'Item' VALUE getValidationErrorMsg('transactionID');
+		END IF;
+		RETURN EXISTS(transactionRef.Error.Item[]);
+		
+	END;
+
+END MODULE;

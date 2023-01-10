@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://cmpa.pmd.com" xmlns:ax21="http://object.pmd.com/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns="http://cmpa.pmd.com" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <wsdl:documentation>
+		CNIC-MSISDN Pairing Authentication
+	<wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="CnicMsisdnPairing_InlineSchema2.xsd"/>
+        <generatedXSD location="CnicMsisdnPairing_InlineSchema1.xsd"/>
+        <binding hasEncoding="false" imported="true" name="CnicMsisdnPairingSoap11Binding" originalBindingStyle="document"/>
+        <binding hasEncoding="false" imported="false" name="CnicMsisdnPairingHttpBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+    <wsdl:types>
+        
+        
+            <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://cmpa.pmd.com" xmlns:ax22="http://object.pmd.com/xsd" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+<xsd:import namespace="http://object.pmd.com/xsd" schemaLocation="CnicMsisdnPairing_InlineSchema1.xsd"/>
+<xsd:include schemaLocation="CnicMsisdnPairing_InlineSchema2.xsd"/>
+    </xsd:schema>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://object.pmd.com/xsd">
+<xsd:include schemaLocation="CnicMsisdnPairing_InlineSchema1.xsd"/>
+    </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="verifyRequest">
+        <wsdl:part element="ns:verify" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="verifyResponse">
+        <wsdl:part element="ns:verifyResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:portType name="CnicMsisdnPairingPortType">
+        <wsdl:operation name="verify">
+            <wsdl:input message="ns:verifyRequest" wsaw:Action="urn:verify"/>
+            <wsdl:output message="ns:verifyResponse" wsaw:Action="urn:verifyResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="CnicMsisdnPairingSoap11Binding" type="ns:CnicMsisdnPairingPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="verify">
+            <soap:operation soapAction="urn:verify" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="CnicMsisdnPairingHttpBinding" type="ns:CnicMsisdnPairingPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="verify">
+            <http:operation location="verify"/>
+            <wsdl:input>
+                <mime:content part="parameters" type="application/xml"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content part="parameters" type="application/xml"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="CnicMsisdnPairing">
+        <wsdl:port binding="ns:CnicMsisdnPairingSoap11Binding" name="CnicMsisdnPairingHttpSoap11Endpoint">
+            <soap:address location="http://cmpa.pmd.org.pk:4048/CnicMobileNumberPairing/services/CnicMsisdnPairing.CnicMsisdnPairingHttpSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port binding="ns:CnicMsisdnPairingSoap11Binding" name="CnicMsisdnPairingHttpsSoap11Endpoint">
+            <soap:address location="https://cmpa.pmd.org.pk:8443/CnicMobileNumberPairing/services/CnicMsisdnPairing.CnicMsisdnPairingHttpsSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port binding="ns:CnicMsisdnPairingHttpBinding" name="CnicMsisdnPairingHttpEndpoint">
+            <http:address location="http://cmpa.pmd.org.pk:4048/CnicMobileNumberPairing/services/CnicMsisdnPairing.CnicMsisdnPairingHttpEndpoint/"/>
+        </wsdl:port>
+        <wsdl:port binding="ns:CnicMsisdnPairingHttpBinding" name="CnicMsisdnPairingHttpsEndpoint">
+            <http:address location="https://cmpa.pmd.org.pk:8443/CnicMobileNumberPairing/services/CnicMsisdnPairing.CnicMsisdnPairingHttpsEndpoint/"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

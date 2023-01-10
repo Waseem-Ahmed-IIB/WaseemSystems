@@ -1,0 +1,34 @@
+PATH com.systemsltd.common,com.systemsltd.common.cache, com.systemsltd.ubl.common,
+com.systemsltd.common.logging, com.systemsltd.ubl.common.database, com.systemsltd.ubl.common.config;
+
+DECLARE ns2 NAMESPACE 'http://cmpa.pmd.com';
+DECLARE ax21 NAMESPACE 'http://object.pmd.com/xsd';
+
+CREATE COMPUTE MODULE postDigitalOnboarding_Compute1
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputProperties;
+		SET OutputRoot.Properties.ContentType = NULL;
+		DECLARE cmpaVerifyResRef REFERENCE TO InputRoot.XMLNSC.ns2:verifyResponse;
+	
+		SET OutputRoot.JSON.Data.serviceHeader = Environment.Variables.Transaction.Request.serviceHeader;
+		SET OutputRoot.JSON.Data.transactionInfo = Environment.Variables.Transaction.Request.transactionInfo;
+		DECLARE output REFERENCE TO OutputRoot.JSON.Data;
+		CALL copyAndConvertTransactionInfo(Environment.Variables.Transaction.Request.transactionInfo, output);
+		
+		IF cmpaVerifyResRef.ns2:return.ax21:status = '00' THEN
+			SET output.responseHeader.responseCode = '00';
+			CREATE FIELD output.responseHeader.responseDetails IDENTITY (JSON.Array);
+            CREATE LASTCHILD OF output.responseHeader.responseDetails TYPE NameValue NAME 'Item' VALUE 'SUCCESS';
+			SET output.cmpaVerificationReponse.responseCode = cmpaVerifyResRef.ns2:return.ax21:responseCode;
+			SET output.cmpaVerificationReponse.message = cmpaVerifyResRef.ns2:return.ax21:message;
+		ELSEIF cmpaVerifyResRef.return.ax21:status='99' THEN
+			SET output.responseHeader.responseCode='99';
+			CREATE FIELD output.responseHeader.responseDetails IDENTITY (JSON.Array);
+            CREATE LASTCHILD OF output.responseHeader.responseDetails TYPE NameValue NAME 'Item' VALUE 'FAILURE';
+			SET output.cmpaVerificationReponse.responseCode = cmpaVerifyResRef.return.ax21:responseCode;
+			SET output.cmpaVerificationReponse.message = cmpaVerifyResRef.ns2:return.ax21:message;
+		END IF;
+		RETURN TRUE;
+	END;
+END MODULE;

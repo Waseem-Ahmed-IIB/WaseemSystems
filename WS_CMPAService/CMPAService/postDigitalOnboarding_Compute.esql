@@ -1,0 +1,20 @@
+PATH com.systemsltd.common.cache,com.systemsltd.ubl.common.database, com.systemsltd.ubl.common.config;
+
+DECLARE ns NAMESPACE 'http://cmpa.pmd.com';
+DECLARE ns1 NAMESPACE 'http://object.pmd.com/xsd';
+
+CREATE COMPUTE MODULE postDigitalOnboarding_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties=InputProperties;
+		DECLARE inputRef REFERENCE TO InputRoot.JSON.Data;
+		SET Environment.Variables.Transaction.Request = inputRef;
+		SET OutputRoot.XMLNSC.ns:verify.ns:userName = getConfigProperty('CMPA_USERNAME');
+		SET OutputRoot.XMLNSC.ns:verify.ns:passwd = getConfigProperty('CMPA_PASSWORD');
+		SET OutputRoot.XMLNSC.ns:verify.ns:request.ns1:cnic = inputRef.verify.cnic;
+		SET OutputRoot.XMLNSC.ns:verify.ns:request.ns1:msisdn = inputRef.verify.msisdn;
+		SET OutputRoot.XMLNSC.ns:verify.ns:request.ns1:transactionID = inputRef.verify.transactionID;
+		
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,224 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "CMPAService",
+    "version" : "1.0.0",
+    "description" : "CMPAService"
+  },
+  "paths" : {
+    "/digitalOnboarding" : {
+      "post" : {
+        "operationId" : "postDigitalOnboarding",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/verifyRequestResponse"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a digitalOnboarding",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/verifyRequest"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/cmpaservice/v1",
+  "definitions" : {
+	  "ServiceHeader" : {
+	      "type" : "object",
+	      "properties" : {
+	        "channel" : {
+	          "type" : "string"
+	        },
+	        "processingType" : {
+	          "type" : "string"
+	        },
+	        "authInfo" : {
+	          "$ref" : "#/definitions/AuthenticationInfo"
+	        },
+	        "parameters" : {
+	          "type" : "array",
+	          "items" : {
+	            "$ref" : "#/definitions/Parameters"
+	          }
+	        }
+	      },
+	      "required" : [ "processingType", "channel" ]
+	    },
+    "AuthenticationInfo" : {
+        "type" : "object",
+        "properties" : {
+          "authenticationType" : {
+            "type" : "string"
+          },
+          "username" : {
+            "type" : "string"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "authKey" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "username", "authenticationType" ]
+      },
+      "Parameters" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "value" : {
+              "type" : "string"
+            }
+          }
+        },
+        "TransactionAttribute" : {
+            "type" : "object",
+            "properties" : {
+              "attributeKey" : {
+                "type" : "string"
+              },
+              "attributeValue" : {
+                "type" : "string"
+              }
+            },
+            "required" : [ "attributeKey", "attributeValue" ]
+          },
+          "TransactionInfo" : {
+              "type" : "object",
+              "properties" : {
+                "transactionType" : {
+                  "type" : "string"
+                },
+                "transactionSubType" : {
+                  "type" : "string"
+                },
+                "referenceId" : {
+                  "type" : "string"
+                },
+                "transactionDate" : {
+                  "type" : "string"
+                },
+                "transactionTime" : {
+                  "type" : "string"
+                },
+                "stan" : {
+                  "type" : "string"
+                },
+                "transmissionDateTime" : {
+                  "type" : "string"
+                },
+                "status" : {
+                  "type" : "string"
+                },
+                "narration" : {
+                  "type" : "string"
+                },
+                "attributeList" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/definitions/TransactionAttribute"
+                  }
+                },
+                "metaDataList" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/definitions/TransactionAttribute"
+                  }
+                }
+              },
+              "required" : [ "transactionType", "referenceId", "transactionDate", "transactionTime", "stan", "transmissionDateTime" ]
+            },
+            "ResponseHeader" : {
+                "type" : "object",
+                "properties" : {
+                  "responseCode" : {
+                    "type" : "string"
+                  },
+                  "responseDetails" : {
+                    "type" : "array",
+                    "items" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "required" : [ "responseCode" ]
+              },
+             
+    "verify" : {
+      "type" : "object",
+      "properties" : {
+        "cnic" : {
+          "type" : "string"
+        },
+        "msisdn" : {
+          "type" : "string"
+        },
+        "transactionID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "cmpaVerificationResponse" : {
+      "type" : "object",
+      "properties" : {
+        "message" : {
+          "type" : "string"
+        },
+        "responseCode" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        }
+      }
+    },
+    "verifyRequest" : {
+      "type" : "object",
+      "properties" : {
+
+	        "serviceHeader" : {
+	          "$ref" : "#/definitions/ServiceHeader"
+	        },
+	        "transactionInfo" : {
+		          "$ref" : "#/definitions/TransactionInfo"
+		        },
+		        "verify" : {
+			          "$ref" : "#/definitions/verify"
+			        }
+      }
+    
+    },
+    "verifyRequestResponse" : {
+        "type" : "object",
+        "properties" : {
+
+  	        "serviceHeader" : {
+  	          "$ref" : "#/definitions/ServiceHeader"
+  	        },
+  	        "transactionInfo" : {
+  		          "$ref" : "#/definitions/TransactionInfo"
+  		        },
+  		      "responseHeader" : {
+			          "$ref" : "#/definitions/ResponseHeader"
+			        },
+  		        "cmpaVerificationResponse" : {
+  			          "$ref" : "#/definitions/cmpaVerificationResponse"
+  			        }
+        }
+      
+      }
+  }
+}
